@@ -13,11 +13,11 @@
 
 // Подразумеваем что число вводится только целое
 
-//int N = new Random().Next(100,1000);
-int N = 205;
+int N = new Random().Next(100,1000);
+//int N = 205;
 if (N > 100 && N <1000 ){ 
     N =  (N/10)%10;
-    Console.WriteLine("----- Work------" + N);
+    Console.WriteLine("Second count = " + N);
 }
 
 
