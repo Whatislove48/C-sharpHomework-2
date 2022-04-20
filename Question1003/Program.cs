@@ -9,7 +9,7 @@
 
 
 
-int N = 161;
+int N = 140;
 
 if ((N%7) == 0 && (N%23) == 0){
     Console.WriteLine("да");
