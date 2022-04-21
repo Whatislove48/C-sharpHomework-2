@@ -24,7 +24,5 @@
 // 12-> 2 
 // 85 -> 8 
           
-
-// int rand_count = new Random().Next(10,100);
 MaxCount();
     
