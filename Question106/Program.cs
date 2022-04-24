@@ -1,6 +1,6 @@
 ﻿using System;
 
-static int SecondNum(int res){
+int SecondNum(int res){
     int num = ((res/10)/10)%10;
     return num;
     } 
