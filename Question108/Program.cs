@@ -9,19 +9,29 @@
 
 // Допустим месяц выбран апрель 2022
 
-
-
-
-int day = 6;
-int[] Weekend = {2,3,9,10,16,17,23,24,30};// Числа выходных (сб,вс)
-int i = 0;
-while (i<Weekend.Length){
-    if (Weekend[i] == day){
-        Console.WriteLine("да");
+int Weeknd(int numday){
+    int[] Weekend = {2,3,9,10,16,17,23,24,30};// Числа выходных (сб,вс)
+    int i = 0;
+    int flag = 0;
+    while (i<Weekend.Length){
+        if (Weekend[i] == numday){
+            flag = 1;
+            break;
+        }
+        else {
+            flag = 0;
+        }
+        i++;
     }
-    else {
-        Console.WriteLine("нет");
-    }
-    i++;
+    return flag;
 }
 
+
+int day = 10;
+
+if (Weeknd(day) == 1 ){
+    Console.WriteLine("Да ");
+}
+else{
+    Console.WriteLine("Нет");
+}
