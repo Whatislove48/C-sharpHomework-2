@@ -1,19 +1,15 @@
-﻿using System;
-
- 
- void MaxCount(){
+﻿
+ int MaxCount(){
 
     int rand_count = new Random().Next(10,100);
     int dec = rand_count/10;
     int count = rand_count%10;
     Console.WriteLine("Random num = "+ rand_count);
     if (dec>count){
-        Console.WriteLine("First num bigger " + dec);
-        //return dec;
+        return dec;
         }
     else {
-       Console.WriteLine("Second num bigger " + count);
-        //return count;
+        return count;
         }
     }
         
@@ -24,5 +20,5 @@
 // 12-> 2 
 // 85 -> 8 
           
-MaxCount();
+Console.WriteLine("{0} is bigger", MaxCount());
     
